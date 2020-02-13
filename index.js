@@ -11,7 +11,7 @@ function addField() {
   let newField = parentNode.children[0].value;
   // goes from <td>, to <tr>, to <table>
   let table = parentNode.parentNode.parentNode;
-  if(newField) {
+  if (newField) {
     // add text to current statements
     hideError(parentNode);
     let statementTag = createStatement(newField);
@@ -113,11 +113,11 @@ function addTable() {
 }
 
 function initErrorTag(errorMessage, insertionPoint) {
-    const textNode = document.createTextNode(errorMessage);
-    const errorTag = document.createElement(ERROR_TAG);
-    errorTag.appendChild(textNode);
-    errorTag.classList.add('warning', 'hidden');
-    insertionPoint.appendChild(errorTag);
+  const textNode = document.createTextNode(errorMessage);
+  const errorTag = document.createElement(ERROR_TAG);
+  errorTag.appendChild(textNode);
+  errorTag.classList.add('warning', 'hidden');
+  insertionPoint.appendChild(errorTag);
 }
 
 function showError(insertionPoint) {
@@ -144,7 +144,7 @@ function createTableRow(statementElement) {
 }
 
 function initRadioButtons(insertionPoint) {
-  for(let i = 0; i < 5; i++) {
+  for (let i = 0; i < 5; i++) {
     const radio = document.createElement('input');
     radio.type = 'radio';
     radio.value = i + 1;

@@ -1,3 +1,21 @@
+/* generic styles */
+.warning {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+
+input[type="text"].statement {
+  width: 30rem;
+}
+
+/* table styles */
 table {
   border: 1px solid #000;
   border-collapse: collapse;
@@ -19,29 +37,11 @@ td {
   padding: 0.5rem 2rem;
 }
 
-.warning {
-  color: red;
-}
-
-.hidden {
-  display: none;
-}
-
-.center {
-  text-align: center;
-}
-
 .fixed-length {
   width: 15rem;
 }
 
-input[type="text"].statement {
-  width: 30rem;
-}
-
-
 /* new field button */
-
 .btn-new-field {
   margin-top: 1rem;
 }
